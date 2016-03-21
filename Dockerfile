@@ -17,3 +17,5 @@ ADD master1.sql /tmp/master1.sql
 ADD master2.sql /tmp/master2.sql
 ADD haproxy.cfg /etc/haproxy/haproxy.cfg
 RUN service haproxy start
+EXPOSE 8080 80 3306 3307 3308
+ENTRYPOINT ["/bin/bash"]
