@@ -13,5 +13,7 @@ ADD my.cnf /etc/my.cnf
 #Start mysql instance
 RUN mysqld_multi start 1
 RUN mysqld_multi start 2
+ADD master1.sql /tmp/master1.sql
+ADD master2.sql /tmp/master2.sql
 ADD haproxy.cfg /etc/haproxy/haproxy.cfg
-CMD ["/bin/bash"]
+RUN service haproxy start
