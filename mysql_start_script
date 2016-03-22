@@ -1,0 +1,8 @@
+#!/bin/bash
+mysqld_multi start 1,2
+echo $?
+
+sleep 10 
+mysql --socket=/tmp/master1.sock < /tmp/master1.sql
+mysql --socket=/tmp/master2.sock < /tmp/master2.sql
+
