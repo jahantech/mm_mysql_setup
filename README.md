@@ -1,8 +1,10 @@
 # Master-to-Master MySQL replication and a webpage for demo of the setup.
 
 ## Setup
-Clone this repository to your machine. 
-
+Clone this repository to your machine: 
+```
+git clone https://github.com/jahantech/mm_mysql_setup.git
+```
 Go to mm_mysql_setup folder and run 
 ```
 docker build .
